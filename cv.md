@@ -39,6 +39,7 @@ I am looking for a job where I can develop and improve my skills.
 
 >Code examples:
 ```
+
 function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
     const tabs = document.querySelectorAll(tabsSelector),
         tabsContent = document.querySelectorAll(tabsContentSelector),
@@ -79,6 +80,7 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
 }
 
 export default tabs;
+
 ```
 
 ### __Work experience:__
