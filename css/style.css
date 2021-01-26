@@ -78,3 +78,24 @@ li {
     max-width: 800px;
 }
 
+.list {
+    padding-left: 0px;
+}
+
+.list > li{
+    padding-left: 20px;
+    position: relative;
+    margin: 8px 0px 8px;
+}
+
+.list > li:before{
+    content: '✔';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    color: red;
+}
+
+.skills__code {
+    font-size: 0.8em;
+}
