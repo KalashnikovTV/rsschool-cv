@@ -1,1 +1,1 @@
-https://kalashnikovtv.github.io/rsschool-cv/cv
+https://kalashnikovtv.github.io/rsschool-cv/
