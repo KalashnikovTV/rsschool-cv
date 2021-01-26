@@ -2,7 +2,7 @@
 ### __Personal information:__
 >Education:
 
-Systems Engineer,
+Engineer,
 Belarusian-Russian University (2022)
 
 >Location:
