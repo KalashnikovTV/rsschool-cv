@@ -46,6 +46,7 @@ li {
 }
 
 .header__photo {
+    margin: 0px;
     width: 200px;
     height: 200px;
 }
