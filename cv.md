@@ -17,7 +17,7 @@ Mogilev, Belarus
 
 >Contacts:
 
-- Phone: +375295450399 (MTC)
+- Phone: +375295****9 (MTC)
 - Email: max.malaschkov@mail.ru
 - Telegram: @KalashnikovTV
 
@@ -32,6 +32,7 @@ I am looking for a job where I can develop and improve my skills.
 - HTML/CSS
 - SASS/SCSS
 - JavaScript
+- jQuery
 - Bootstrap
 - Webpack/Gulp
 - Git
