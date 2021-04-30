@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <figure class="header__photo">
+                    <a href="https://github.com/KalashnikovTV"><img src="img/photo.jpg" alt="photo"></a>
+                </figure>
+                <h1 class="header__name">
+                    Maksim Malashkov
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="information">
+            <div class="container">
+                <h2 class="title">Personal information:</h2>
+                <div class="information__info">
+                    <div class="information__info-item">
+                        <div class="information__info-title">
+                            Education:
+                        </div>
+                        <div class="information__info-content">
+                            Engineer, Belarusian-Russian University (2022)
+                        </div>
+                    </div>
+
+                    <div class="information__info-item">
+                        <div class="information__info-title">
+                            Location:
+                        </div>
+                        <div class="information__info-content">
+                            Mogilev, Belarus
+                        </div>
+                    </div>
+                    <div class="information__info-item">
+                        <div class="information__info-title">
+                            Spoken languages:
+                        </div>
+                        <div class="information__info-content">
+                            <ul>
+                                <li>Russian</li>
+                                <li>Belarusian</li>
+                                <li>English (A2)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information__info-item">
+                        <div class="information__info-title">
+                            Contacts:
+                        </div>
+                        <div class="information__info-content">
+                            <ul>
+                                <li>Phone: <a href="tel:+375295555555">+375295****9</a> (MTC)</li>
+                                <li>Email: <a href="mailto:max.malaschkov@mail.ru">max.malaschkov@mail.ru</a></li>
+                                <li>Telegram: <a href="https://telegram.me/KalashnikovTV">@KalashnikovTV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information__info-item">
+                        <div class="information__info-title">
+                            About myself:
+                        </div>
+                        <div class="information__info-content">
+                            I am a very responsible and purposeful person, full of energy and determination to achieve
+                            my goals and desired results. I am looking for a job where I can develop and improve my
+                            skills.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <h2 class="title">Skills:</h2>
+                <ol class="skills__list list">
+                    <li>HTML/CSS</li>
+                    <li>SASS/SCSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Webpack/Gulp</li>
+                    <li>Git</li>
+                    <li>BEM</li>
+                </ol>
+                <h2 class="title">Code examples:</h2>
+                <pre class="skills__code">
+                <code>
+                function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
+                    const tabs = document.querySelectorAll(tabsSelector),
+                        tabsContent = document.querySelectorAll(tabsContentSelector),
+                        tabsParent = document.querySelector(tabsParentSelector);
+                
+                    function hideTabContent() {
+                        tabsContent.forEach(item => {
+                            item.classList.add('hide');
+                            item.classList.remove('show', 'fade');
+                        });
+                
+                        tabs.forEach(item => {
+                            item.classList.remove(activeClass);
+                        });
+                    }
+                
+                    function showTabContent(i = 0) {
+                        tabsContent[i].classList.add('show', 'fade');
+                        tabsContent[i].classList.remove('hide');
+                        tabs[i].classList.add(activeClass);
+                    }
+                
+                    hideTabContent();
+                    showTabContent();
+                
+                    tabsParent.addEventListener('click', (event) => {
+                        const target = event.target;
+                
+                        if (target && target.classList.contains(tabsSelector.slice(1))) {
+                            tabs.forEach((item, i) => {
+                                if (target == item) {
+                                    hideTabContent();
+                                    showTabContent(i);
+                                }
+                            });
+                        }
+                    });
+                }
+                
+                export default tabs;
+                </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="experience">
+        <div class="container">
+            <h2 class="title">Work experience:</h2>
+            <ol class="experience__list list">
+                <li><a href="https://github.com/KalashnikovTV">Responsive HTML template</a></li>
+                <li><a href="http://prntscr.com/xm4sn5">Course “From 0 to 1” (Markup Developer) by Vadim Prokopchuk</a>
+                </li>
+                <li><a href="http://prntscr.com/xm4znz">Course on Coursera “The basics of programming in Python”</a>
+                </li>
+                <li>Completed JavaScript courses by Ivan Petrichenko</li>
+                <li>Coding in the University</li>
+            </ol>
+        </div>
+    </footer>
+</body>
+
+</html>
